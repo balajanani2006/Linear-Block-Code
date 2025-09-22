@@ -21,7 +21,7 @@ for i in range (row):
     p = list(map(int, input(f"Enter the row values : {i+1} (Separated by space) : ").split()))  
     pb.append(p)
 p_mat = np.array(pb, dtype=int)
-Ik=np.eye(row, dtype=int) # Diagonal Matrix
+Ik=np.eye(row, dtype=int) # Diagonal Matrix  
 g_mat = np.hstack((p_mat,Ik)) # Generator Matris
 
 # Codeword length and parity bit length
